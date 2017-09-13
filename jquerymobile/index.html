@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>jQuery Mobile page</title>
+ 	<meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="js/jquery.js"></script>추가수정 -->
+ 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> 
+ 	<link rel="stylesheet" href="css/goodtheme.min.css" /><!--테마-->
+	<!-- <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />테마 -->
+	<link rel="stylesheet" href="jquerymobile.css" /><!--테마-->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	 <!-- owl -->
+	 <link rel="stylesheet" href="plugin/owl.carousel.min.css">
+	 <link rel="stylesheet" href="plugin/owl.theme.default.min.css">
+	 <script src="plugin/owl.carousel.min.js"></script>
+<script type="text/javascript">
+
+ $(document).ready(function(){
+	var mainswiper = new Swiper('.mainswiper', {
+        paginationClickable: true,
+        spaceBetween: 0,
+		loop: true,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: false
+		
+	});
+
+	 $('.experience').eq(0).find('.con li').each(function(index){
+        
+        $(this).delay(index*300).animate({
+            opacity : 1,
+            top : 0
+        });
+    });
+    
+    function ani(event){
+        
+        $('.experience .con li').css({ opacity:0, top:-30 });
+        var num = event.item.index;
+
+        for ( var i = 0; i <4; i++ ) {
+        
+            $('.experience').eq(num).find('.con li').eq(i).delay(i*300).animate({
+                opacity : 1,
+                top : 0
+            });
+        }
+    }
+    
+    $('.owl-carousel').owlCarousel({
+        items : 1,
+        margin : 10,
+        dots : false,
+        onTranslated : ani
+    });
+    
+    var owl = $('.owl-carousel'); // 플러그인 선택자
+    owl.owlCarousel();
+
+    $('.page button').on('click',function(){
+        
+        var index = $(this).index();
+        
+        owl.trigger('to.owl.carousel',[index,300]);
+    });
+
+});
+
+
+		</script>
+
+</head>
+<body>
+
+<!-- Start of main page -->
+<div data-role="page" id="mainPage" class="pageBasic">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" id="soraHeader"  >
+		<h1>Merci219</h1>
+	        <a href="#mainPage" data-icon="user" class="ui-btn-left homeButton" alt="아이콘으로 표시">홈</a><!--data-rel="back"-->
+			<a href="#" data-icon="edit" class="ui-btn-right homeButton">로그인</a>				 
+		<div data-role="navbar" id="soraMenu">
+		</div> <!-- /navbar -->
+	</div><!-- /header -->
+	
+
+	<div role="main" class="ui-content swiper-container mainswiper" id="mainIntroBox">
+		<div class="swiper-wrapper swiperbox">	
+			<div class="mainIntro swiper-slide">
+				<img src="images/slides/note.jpg" class="mainimg ">
+				<div class="mainMsg textpoint">
+							<p>merci219</p>
+				</div>
+			</div>
+			<div class="mainIntro swiper-slide">
+				<img src="images/slides/notebook.jpg" class="mainimg ">
+				<div class="mainMsg">
+					<p> goal</p>
+				</div>
+			</div>	
+			<div class="mainIntro swiper-slide" >
+				<img src="images/slides/flow.jpg" class="mainimg ">
+				<div class="mainMsg textpoint">
+					<p >Sense</p>
+				</div>
+			</div>
+			<div class="mainIntro swiper-slide" >
+				<img src="images/slides/mobile.jpg" class="mainimg " >
+				<div class="mainMsg">
+					<p>Creative</p>
+				</div>
+			</div>
+		</div>
+		
+        <div class="anotherBox" id="contents">
+			<div class="Menurow">
+                <div class="mainMenu">
+					<div class="mainMenuImg">
+						<img src="images/self.jpg" />
+						<div class="menuName">
+							<a class="menuText" href="#self_introduction">자기소개</a>
+						</div>
+					</div>
+				</div>
+                <div class="mainMenu">
+                    <div class="mainMenuImg">
+						<img src="images/experience.jpg" />
+						<div class="menuName">
+							<a class="menuText" href="#experience">사회경험</a>
+						</div>
+					</div>
+				</div>
+                <div class="mainMenu">
+					<div class="mainMenuImg">
+						<img src="images/portfolio.jpg" />
+						<div class="menuName">
+							<a class="menuText" href="#portfolio">포트폴리오</a>
+						</div>
+					</div>
+				</div>
+                <div class="mainMenu">
+					<div class="mainMenuImg">
+						<img src="images/email.jpg" />
+						<div class="menuName">
+							<a class="menuText" href="#email">email</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- /content --> 
+	</div>	
+</div><!-- /page -->
+
+
+<!-- Start of self_introduction page -->
+<div data-role="page" id="self_introduction" class="pageBasic">
+	 <div data-role="header" data-position="fixed" data-tap-toggle="false" id="soraHeader"  >
+		  <h1>Merci219</h1>
+                <a href="#mainPage" data-icon="user" class="ui-btn-left homeButton" alt="아이콘으로 표시">홈</a>
+			 	<a href="#" data-icon="edit" class="ui-btn-right homeButton">로그인</a>				 
+		 <div data-role="navbar" id="soraMenu">
+				<ul>
+					<li class="soraMeunBtn"><a href="#self_introduction">자기소개</a></li>
+					<li class="soraMeunBtn"><a href="#experience">다양한경험</a></li>
+					<li class="soraMeunBtn"><a href="#portfolio">포트폴리오</a></li>
+				</ul>
+		 </div> 
+	</div>  <!-- /header -->
+	
+
+	<div role="main" class="ui-content " id="selfIntroBox">
+		<div class="selfIntro"  >				
+				<div class="anotherBox" >
+						<div class="selfIntro Menurow" >
+							<div class="mainMenu">
+								<div class="mainMenuImg">
+									<img src="images/self/goal.jpg">
+									<div class="colorbox menuName">
+												<p>goal</p>
+												<p class="introTextbox">사진을 보며 목표를 이뤘고</br> 또다른 목표를 향해 가는 사람</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="selfIntro Menurow">
+							<div class="mainMenu">
+								<div class="mainMenuImg">
+									<img src="images/self/challenge.jpg" >
+									<div class="colorbox menuName">
+										<p>challenge</p>
+										<p class="introTextbox">항상 할 수 있다는 마음가짐으로 </br>어떤 일에도 도전 하는 사람</p>
+									</div>
+								</div>
+							</div>		
+						</div>
+						<div class="selfIntro Menurow" >
+							<div class="mainMenu">
+								<div class="mainMenuImg">
+									<img src="images/self/Creative.jpg" >
+									<div class="colorbox menuName">
+										<p>Creative</p>
+										<p class="introTextbox">변화는 있어도</br> 변함은 없는 사람</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="selfIntro Menurow" >
+							<div class="mainMenu">
+								<div class="mainMenuImg">
+									<img src="images/self/Sense.jpg" >
+									<div class="colorbox menuName">
+										<p>Sense</p>
+										<p class="introTextbox">필요한 부분을 빠르게 파악할 수 있는</br> 감각을 가진 사람</p>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div><!-- /content  -->
+		</div>		
+	</div>
+</div><!-- /page -->
+
+
+
+<!-- Start of vesatile_experience page -->
+<div data-role="page" id="experience" class="pageBasic">
+	 <div data-role="header" data-position="fixed" data-tap-toggle="false" id="soraHeader"  >
+		  <h1>Merci219</h1>
+                <a href="#mainPage" data-icon="user" class="ui-btn-left homeButton" alt="아이콘으로 표시">홈</a>
+				 <a href="#" data-icon="edit" class="ui-btn-right homeButton">로그인</a>				 
+		<div data-role="navbar" id="soraMenu">
+				<ul>
+					<li class="soraMeunBtn"><a href="#self_introduction">자기소개</a></li>
+					<li class="soraMeunBtn"><a href="#experience">다양한경험</a></li>
+					<li class="soraMeunBtn"><a href="#portfolio">포트폴리오</a></li>
+				</ul>
+		</div> 
+	</div>  <!-- /header -->
+
+	<div role="main" class="ui-content">
+	  <div class="page">
+		<button class="tab" >관련교육 </button>
+		<button class="tabend" >관련경험</button>
+	</div>
+	   <div class="section">
+		   <div class="owl-carousel owl-theme">
+				<div class="experience">
+					<ul class="con">
+							<li> HTML, CSS, Javascript</li>
+							<li>Jquery, javascript실무교육  </li>
+							<li>Java 기본적개념 교육</li>
+							<li>HTML5, 시멘틱마크업 인터넷 강좌</li>
+					</ul>
+				</div>
+				<div class="experience">
+					<ul class="con">
+							<li> JqueryMobile</li>
+							<li> HTML5,CSS3  </li>
+							<li> React.js Node npm </li>
+							<li> SVN, SourcTree 소스,버전 관리</li>
+					</ul>
+				</div>
+	       </div>	  
+	   </div>	
+	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of portfolio page -->
+<div data-role="page" id="portfolio" class="pageBasic">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" id="soraHeader"  >
+		  <h1>Merci219</h1>
+                <a href="#mainPage" data-icon="user" class="ui-btn-left homeButton" alt="아이콘으로 표시">홈</a>
+				 <a href="#" data-icon="edit" class="ui-btn-right homeButton">로그인</a>				 
+		<div data-role="navbar" id="soraMenu">
+				<ul>
+					<li class="soraMeunBtn"><a href="#self_introduction">자기소개</a></li>
+					<li class="soraMeunBtn"><a href="#experience">다양한경험</a></li>
+					<li class="soraMeunBtn"><a href="#portfolio">포트폴리오</a></li>
+				</ul>
+		</div> 
+	</div>  <!-- /header -->
+	<div role="main" class="ui-content pofolBox">
+	
+		 <div class="Menurow pofol">
+				<div class="mainMenu" >
+					<div class="mainMenuImg pofolimg pofolimg1">
+						<img src="images/portfolio/belif.jpg">
+					</div>
+				</div>
+				<div class="mainMenu">
+					<div class="mainMenuImg pofolimg pofolimg2">
+						<img src="images/portfolio/mditac.jpg" >
+					</div>	
+				</div>
+				 <div class="mainMenu">
+						<div class="mainMenuImg pofolimg pofolimg3">
+								<img src="images/portfolio/belif Mobile.png" >
+						</div>
+				</div>
+				<div class="mainMenu">
+						<div class="mainMenuImg pofolimg pofolimg4">
+								<img src="images/portfolio/bootstrap.png" >
+						</div>
+				</div> 
+					
+
+			</div> 
+		</div>
+		
+	 </div><!--/content -->
+
+	
+</div><!-- /page -->
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+* { margin:0; padding:0; }
+
+/* header */
+.pageBasic{width:100%;}
+.pageBasic #soraHeader{width:100%;}
+.pageBasic #soraMenu{width:100%; height:25%; position: relative; }
+.pageBasic #soraMenu .soraMeunBtn{width:33%; height: 100%;}
+
+/* main page */
+#mainPage{width: 100%; height: 100%; margin: 0; font-size: 16px;}
+#mainPage #mainIntroBox {width: 100%; margin: 0; padding: 0; position: relative; }
+#mainPage #mainIntroBox {width: 100%;  margin: 0; padding: 0; }
+#mainPage #mainIntroBox .swiperbox {width: 100%;  margin: 0; padding: 0; }
+#mainPage #mainIntroBox .swiperbox .mainIntro{width: 100%;  margin: 0; }
+#mainPage #mainIntroBox .swiperbox .mainIntro .mainimg {width: 100%; position: absolute; }
+#mainPage #mainIntroBox .swiperbox .mainIntro .mainMsg {width: 100%; position: absolute; font-size: 3em; margin:25% 45%; color:#FFF }
+#mainPage #mainIntroBox .swiperbox .mainIntro .textpoint{color:#000;}
+
+
+#mainPage #mainIntroBox .anotherBox{width: 100%; height: 100%; margin-top: 58.5%; position: relative;}
+
+.mainMenuImg img { width:100%; }
+.mainMenu div:hover img  {opacity:0.3; transform:scale(1.05); background-color: #E87708; position: relative;}
+.mainMenu { float:left; width:100%; padding:0 15px; box-sizing: border-box; margin-bottom:15px; }
+.menuName{position: relative; z-index: 10;}
+.menuName a{ text-decoration: none; background-color: #E87708;
+            width:60%; height:100%;  text-align:center;
+            font-size:2em; background:linear-gradient(#E87708, #F4B864);
+           line-height:2em; margin-top: -29%; margin-left: 40%;  float: left; 
+           top:-50%; cursor:pointer; } 
+.menuName a:link { color:#fff;}
+.menuName a:visited{ color:#fff;}
+.anotherBox { margin:15px auto 0; padding:30px 15px; }
+.Menurow { margin:0 -15px; }
+
+@media ( min-width:768px ) {
+  #contents { width:750px; }
+  .mainMenu { width:50%; }
+}
+
+@media ( min-width:992px ) {
+  #contents { width:970px; }
+  .mainMenu { width:33.33%; }
+}
+
+@media ( min-width:1200px ) {
+  #contents { width:1170px; }
+  .mainMenu { width:25%; }   
+}
+/* 자기소개 */
+#selfIntroBox .selfIntro{width: 100%; position: relative;}
+#selfIntroBox .selfIntro .anotherBox .Menurow div:hover img{opacity:0.3; transform:scale(1); background-color: #E87708; position: relative;}
+#selfIntroBox .selfIntro .anotherBox .Menurow div:hover div { margin-top:-30px; opacity:1;  } 
+#selfIntroBox .selfIntro .anotherBox .Menurow .mainMenu .mainMenuImg .colorbox{ text-align: center;
+  background:linear-gradient(#FDC250, #CC8F00); width:100%; height:130px; line-height:2em; padding-top:-50%; left:-40%; margin-left:40%; margin-top:-20px; border-radius:4px; color:#fff; cursor:pointer;
+}
+
+/* 다양한 경험 */
+#experience div .page { text-align:center; }
+#experience div .page button { width: 50%;  float: left;}
+#experience div .section { width:100%; margin:0 auto; clear: left }
+
+#experience div .section .owl-carousel .experience { height:100%; background-color:#FDC250; text-align:center;  line-height:2em; font-size:1.35em; color:#fff; border-radius:10px; }
+#experience div .section .owl-carousel .experience .con { width:100%; margin:0 auto; }
+#experience div .section .owl-carousel .experience .con li {  list-style:none; width:100%;  position:relative; opacity:0; }
+
+/*  포트폴리오 */
+#portfolio .pofolBox{margin:100px auto 40px; overflow:hidden;  position: relative; }
+#portfolio .pofolBox .contents .pofol {width: 100%; height: 100%; position: relative;  float: left;}
+#portfolio .pofolBox .contents .pofol .mainMenu{
+  width: 100%; height: 100%; position: absolute; float: left;
+  overflow:hidden; position:relative;}
+#portfolio .pofolBox .contents .pofol .mainMenu div:hover img{opacity:1; transform:scale(5.0); } 
+
+
