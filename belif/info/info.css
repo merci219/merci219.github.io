@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+
+body,ul,li,div,p,h1,a{ margin:0; padding:0;}
+
+a{ text-decoration:none;}
+
+ul{list-style:none; }
+
+body{ margin-top:-50px;	}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡheaderㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+header{ width:100%;  min-width:999px; height:80px; background:#FFF;  box-shadow: 0px 4px 44px -8px rgba(0,0,0,0.45); position:absolute; top:0; left:0; z-index:300;}
+
+header>h1{width:126px; height:42px; position:absolute; left:50%; top:18px; z-index:100;}
+header>h1{margin-left:-63px;}
+
+header>h1 a{width:126px; height:42px; background:url(img/logo.jpg) no-repeat;  text-indent:-9999px; display:block;}
+
+.gnb{ width:100%; margin:25px auto; position:relative; z-index:30;}
+
+.menu{ height:40px;position:relative; z-index:100; margin:10px auto; width:900px;}
+
+.menu>li{float:left; height:40px;	position:relative;  }
+.menu a{ display:block; width:100%; height:40px;line-height:40px; font-size:21px; font-family: 'Jeju Gothic', sans-serif; color:#333; text-transform:uppercase;}
+
+#belif{margin-right:150px;}
+#belif>a{}
+
+#item{margin-right:150px;}
+#item>a{ }
+
+#stemp{margin-right:150px; margin-left:194px;}
+#stemp>a{}
+
+#project{}
+#project>a{}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsubㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+.sub{ height:150px;  padding:0; margin-top:0;  position:absolute;	left:0px;	height:40px; z-index:20; display:none;}
+.sub{ padding-top:10px; }
+.sub li{ margin:0; padding:10px 0px 10px 0px; height:15px;}
+.sub li a{ width:100px; font-size:14px; font-family: 'Jeju Gothic', sans-serif; color:#333; text-transform:lowercase;}
+
+#sub_Bg{ width:100%; height:170px; background:rgba(250,250,250,0.7); position:absolute; top:81px; z-index:10; left:0; display:none;}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡvisual_containerㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+.subsub{width:480px; height:140px; margin:0 auto; min-width:999px;}
+.subsub{ margin-top:180px;}
+
+.subsub>h3{width:80px; font-size:38px; font-family: 'Source Sans Pro', sans-serif; color:#34aeff; text-transform:uppercase; margin:0 auto;}
+.subsub>h3{margin-bottom:20px;}
+
+.subsub>ul{width:200px; height:17px; margin:0 auto;}
+.subsub>ul>li{float:left; margin-right:40px; padding-right:40px; border-right:1px solid #999; height:15px;}
+.subsub>ul>li:last-child{border:0 none; padding:0; margin:0;}
+
+.subsub>ul>li>a{font-size:14px; font-family: 'Jeju Gothic', sans-serif; color:#333;text-transform:uppercase;}
+
+.warp{width:100%; min-width:999px;}
+
+.product1{width:1000px; margin:0 auto; padding-bottom:100px;}
+.product1{ margin-top:0px;}
+
+.product1>h1{padding:0; margin:0; font-size:28px; font-family: 'Source Sans Pro', sans-serif; color:#333;}
+.product1>p{ font-family: 'Nanum Gothic', serif; font-size:15px; color:#333; margin-top:20px;}
+
+#product1_1{margin:0 auto;  width:840px;}
+#product1_1{margin-top:50px;}
+
+#product1_1>p{background:#bae9ff ;font-family: 'Jeju Gothic', sans-serif;font-size:18px; color:#000; width:885px; height:30px; text-align:center; padding-top:12px;}
+
+.product1_1{ width:900px; height:350px;}
+
+.product1_1>li{display:block; float:left; width:160px; height:55px; padding:20px 30px 20px 30px;border-right:1px solid #bae9ff; border-bottom:1px solid #bae9ff;}
+.product1_1>li:nth-child(1){border-left:1px solid #CCC;}
+.product1_1>li:nth-child(5){clear:left;border-left:1px solid #bae9ff;}
+.product1_1>li:nth-child(9){clear:left;border-left:1px solid #bae9ff;} 
+
+.product1_1>li>a{display:block;margin:0 auto;text-indent:-9999px;}
+.product1_1>li:nth-child(1) a{background:url(img/site_belif_1_03.jpg) no-repeat; width:110px; height:45px;}
+.product1_1>li:nth-child(2) a{background:url(img/site_belif_1_05.jpg) no-repeat; width:94px; height:45px;}
+.product1_1>li:nth-child(3) a{background:url(img/site_belif_1_07.jpg) no-repeat; width:130px; height:36px;}
+.product1_1>li:nth-child(4) a{background:url(img/site_belif_1_09.jpg) no-repeat; width:139px; height:36px;}
+.product1_1>li:nth-child(5) a{background:url(img/site_belif_1_16.jpg) no-repeat; width:122px; height:38px;}
+.product1_1>li:nth-child(6) a{background:url(img/site_belif_1_18.jpg) no-repeat; width:124px; height:51px;}
+.product1_1>li:nth-child(7) a{background:url(img/site_belif_1_20.jpg) no-repeat; width:160px; height:38px;}
+.product1_1>li:nth-child(8) a{background:url(img/site_belif_1_22.jpg) no-repeat; width:139px; height:38px;}
+.product1_1>li:nth-child(9) a{background:url(img/site_belif_1_28.jpg) no-repeat; width:138px; height:36px;}
+.product1_1>li:nth-child(10) a{background:url(img/site_belif_1_30.jpg) no-repeat; width:139px; height:36px;}
+/*
+        <ul class="product1_2">      
+                <li><a href="#">신라면세점</a></li><li><a href="#">롯데인터넷면세점</a></li><li><a href="#">신세계면세점</a></li><li><a href="#">동화면세점</a></li>
+                
+                <li><a href="#">부산롯데인터넷면세점</a></li>*/
+#product1_2{margin:0 auto;width:840px; }
+#product1_2{margin-top:0px;}
+
+#product1_2>p{background:#bae9ff;font-family: 'Jeju Gothic', sans-serif;font-size:18px; color:#000; width:885px; height:30px; text-align:center; padding-top:12px;}
+
+.product1_2{ width:900px; height:200px;}
+
+.product1_2>li{display:block; float:left; width:180px; height:55px; border-right:1px solid #bae9ff;padding:20px; border-bottom:1px solid #bae9ff;}
+.product1_2>li:nth-child(1){border-left:1px solid #bae9ff;}
+.product1_2>li:nth-child(5){border-left:1px solid #bae9ff;}
+
+.product1_2>li>a{display:block;margin:0 auto; text-indent:-9999px;}
+.product1_2>li:nth-child(1) a{background:url(img/site_belif_1_34.jpg) no-repeat; width:138px; height:43px;}
+.product1_2>li:nth-child(2) a{background:url(img/site_belif_1_36.jpg) no-repeat; width:177px; height:37px;}
+.product1_2>li:nth-child(3) a{background:url(img/site_belif_1_38.jpg) no-repeat; width:152px; height:43px;}
+.product1_2>li:nth-child(4) a{background:url(img/site_belif_1_40.jpg) no-repeat; width:161px; height:48px;}
+.product1_2>li:nth-child(5) a{background:url(img/site_belif_1_52.jpg) no-repeat; width:138px; height:37px;}
+.product1_2>li:nth-child(6) a{background:url(img/site_belif_1_47.jpg) no-repeat; width:124px; height:53px;}
+.product1_2>li:nth-child(7) a{background:url(img/site_belif_1_50.jpg) no-repeat; width:130px; height:53px;}
+
+
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstampㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+#belifstamp>a{width:100px; height:100px; background:#F00; position:fixed; bottom:25px; right:30px;background:url(img/simbol.png) no-repeat; z-index:199;}
+#belifstamp_bg{width:124px; height:97px; background:url(img/stampbg1.png) no-repeat; position:fixed; z-index:50;bottom:50px; right:26px; display:none;}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡfooterㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+footer{ width:100%; height:140px; background:#666; overflow:hidden;min-width:999px;}
+footer>div{ width:500px; height:50px; margin:0 auto;}
+footer>div{margin-top:20px;}
+footer>div>ul{width:270px; height:13px; margin:0 auto;}
+footer>div>ul>li{height:13px; float:left; margin-left:10px; padding-left:10px; border-left:1px solid #FFF;}
+footer>div>ul>li:first-child{border-left:0 none;}
+footer>div>ul>li>a{font-family:"돋움",Arial; font-size:11px; display:block;color:#FFF;}
+footer>div>p{ width:500px;height:15px; font-family:"돋움",Arial; font-size:11px; color:#FFF;text-align:center; margin-top:10px;}
+
+
+#sns{width:100px; height:40px; text-indent:-9999px; }
+#sns li{width:40px; height:40px; margin-right:20px; display:block; float:left;}
+#sns li:last-child{margin:0;}
+#sns>li:nth-child(1) a{width:40px; height:40px; display:block; background:url(img/instar.png) no-repeat;}
+#sns>li:nth-child(2) a{width:40px; height:40px; display:block; background:url(img/facebook.png) no-repeat;}
+
+#digh{ background:url(img/Untitled-1.jpg) no-repeat;width:931px; height:149px; margin:0 auto;}
+
+#digh{margin-top:250px;}
+

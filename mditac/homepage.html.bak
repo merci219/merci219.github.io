@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>homepage1</title>
+<link rel="stylesheet" href="homepage_main.css">
+<link rel="stylesheet" href="swiper.min.css">
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script src="swiper.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	var mainMenu=$('.menu');
+	mainMenu.find('ul').hide();
+	var mainTxt=$('.abl');
+	mainTxt.hide();
+	mainMenu.hover(function(){//$('.hgroup').로 교체해도됨
+		$(this).find('ul').stop().slideDown(300);
+		mainTxt.stop().slideDown(300);
+		$(".header_bg").stop().slideDown(300);
+	},function(){
+		$(this).find('ul').stop().slideUp(300);
+		mainTxt.stop().slideUp(300);
+		$(".header_bg").stop().slideUp(300);
+		})
+	var a_btn=$('nav>ul li a');
+	a_btn.mouseenter(function(){
+		var num=$(this).parent('[class]').attr('class').substr(1,1);
+		$('#TopMenuTxt').attr('src','img_n/menu_img_'+num+'.jpg');
+		
+		})
+	})
+	
+
+<!-- Swiper JS -->
+
+     $(document).ready(function(){
+	var swiper1 = new Swiper('.swiper1', {
+		pagination: '.swiper-pagination',
+        paginationClickable: true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 0,
+		loop: true,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: false
+		
+    });
+	
+	 var swiper2 = new Swiper('.swiper2', {
+        paginationClickable: true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 15,
+		loop: true,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: false,
+		direction: 'vertical'
+    });
+	
+	var swiper3 = new Swiper('.swiper3', {
+		pagination: '.swiper-pagination',
+        paginationClickable: true,
+		nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 0,
+		loop: true,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: false,
+		direction: 'vertical'
+ });	
+	
+});
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+<!--homepage header-->
+<header>
+    <div class="header_bg">
+    </div> 
+	<div class="header_size">
+        <div class="logo">
+        <a href="#"><img src="img_n/logo_n.png" alt="의료기기정보기술지원센터"></a>
+        </div>
+        
+        <div class="links">
+            <span><a href="#">로그인</a></span>
+            <span><a href="#">회원가입</a></span>
+			<span><a href="#">홈</a></span>
+			<span><a href="#">교육홈페이지</a></span>
+        </div>
+        
+        <nav>
+          <nav class="menu">
+            <li class="main_menu" id="menu01"><a href="#"><img src="img_n/menu01.png" alt="사업소개"></a>
+                <ul class="sub_menu">
+					<li><a href="#">저위험 의료기기 위탁 인증 </a></li>
+					<li><a href="#">의료기기 기술문서 심사</a></li>
+					<li><a href="#">개방형실험실 운영</a></li>
+					<li><a href="#">국제규격 가이드라인개발 </a></li>
+                    <li><a href="#">안전정보수집·분석</a></li>
+					<li><a href="#">의료기기 신속제품화 지원</a></li>
+					<li><a href="#">맞춤형 기술지원</a></li>
+					<li><a href="#">의료기기 품질책임자 교육</a></li>
+                    <li><a href="#">RA 양성 및 인증</a></li>
+                </ul>
+            </li>
+            <li class="main_menu" id="menu02"><a href="#"><img src="img_n/menu02.png" alt="정보마당"></a>
+                <ul class="sub_menu">
+                    <li><a href="#">해외의료기기동향</a></li>
+                    <li><a href="#">임상시험정보·동향</a></li>
+                    <li><a href="#">안정성정보</a></li>
+                    <li><a href="#">주요기관안내</a></li>
+                </ul>
+            </li>
+            <li class="main_menu" id="menu03"><a href="#"><img src="img_n/menu03.png" alt="알림마당"></a>
+                <ul class="sub_menu">
+                <li><a href="#">주요소식</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">입찰공고</a></li>
+                <li><a href="#">채용공고</a></li>
+                <li><a href="#">자주하는질문</a></li>
+                <li><a href="#">인증업무소식</a></li>
+                </ul>
+            </li>
+            <li class="main_menu" id="menu04"><a href="#"><img src="img_n/menu04.png" alt="참여마당"></a>
+                <ul class="sub_menu">
+                <li><a href="#">예산낭비신고센터</a></li>
+                <li><a href="#">Q&#38;A</a></li>
+                </ul>
+            </li>
+            <li class="main_menu" id="menu05"><a href="#"><img src="img_n/menu06.png" alt="센터소개"></a>
+                <ul class="sub_menu">
+                <li><a href="#">기관장 인사말</a></li>
+                <li><a href="#">설립목적</a></li>
+                <li><a href="#">비전 및 미션</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">CI소개</a></li>
+                <li><a href="#">찾아오는길</a></li>
+                </ul>
+            </li>
+          </ul>
+          <div class="abl">
+            	<div class="menu_txt">
+                	<img src="img_n/menu_img_1.jpg" id="TopMenuTxt" alt="" width="201" height="43" />
+                </div>
+            </nav>
+        </nav> 
+    </div>        
+</header>
+<section class="container">
+  <div class="slidebox">
+	  <div class="swiper-container swiper1">
+			<div class="swiper-wrapper ">
+				<div class="swiper-slide slide1" ><a href="#">
+                <img src="img/slide1.jpg" 
+                alt="여름 바캉스 특집 7월 신규가입 이벤트">
+                 </a></div>
+				<div class="swiper-slide slide2" ><a href="#">
+                <img src="img/slide2.jpg" alt="여름방학 용돈 모으기 프로젝트 
+				친구야 우리 용돈 같이벌자!">
+                </a></div>
+				<div class="swiper-slide slide3" ><a href="#">
+                <img src="img/slide3.jpg" alt="오직 엠브레인에만 있다!">
+                </a></div>
+				<div class="swiper-slide slide4" ><a href="#">
+                <img src="img/slide4.jpg" alt="테마파크 서비스 만족조사">
+                </a></div>
+			</div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+		</div>
+        
+
+		<div class="joinbox">
+			<div class="joinbox_bg">
+			</div>
+			<ul class="textbox">
+					<li>아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="영문+숫자" class="text1" name="text1"></li>
+					<li>비밀번호&nbsp;&nbsp;<input type="password" value="영문+숫자/특수기호" class="text1"></li>
+					<li><a href="#"><img src="img/join_btn.png" alt="로그인"></a></li>
+					<li><a href="#"><img src="img/join_btn2.png" alt="패널가입"></a></li>
+					<li><a href="#"><img src="img/join_btn3.png" alt="아이디 찾기"></a></li>
+					<li><a href="#"><img src="img/join_btn4.png" alt="비밀번호 찾기"></a></li>
+					<li class="iconbox"><a href="#"><img src="img/pannelgift.png" alt="패널가입혜택 그림"><p>패널가입해택</p></a></li>
+					<li><img src="img/blue_bar.png" alt="bar"></li>
+					<li class="iconbox"><a href="#"><img src="img/menualpic.png" alt=" 조사참여방법 그림"><p>조사참여방법</p></a></li> 
+			</ul>	
+		</div>
+	</div>
+    <div class="noticebox">
+    	<div class="notice_center">
+            <div class="swiper-container swiper2">
+                <img src="img/notice_icon.png" alt="공지사항아이콘">
+                     <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                             <div class="n_textbox">
+                             	<div class="n_box">
+                                     <span class="notice_text">고객센터 임시 운영 중단 안내</span>
+                                     <span class="no_date">2016.06.16</span>
+                                  </div>
+                                <div class="n_box">   
+                                     <span class="notice_text">[06월 18일] 정기 서버 점검 안내</span>
+                                     <span class="no_date">2016.06.15</span>
+                                </div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide">
+                             <div class="n_textbox">
+                                 <div class="n_box">
+                                     <span class="notice_text">정기 서버 점검 안내</span>
+                                     <span class="no_date">2015.05.15</span>
+                                  </div>
+                                 <div class="n_box">
+                                     <span class="notice_text">고객센터 중단 안내</span>
+                                     <span class="no_date">2016.04.16</span>
+                                 </div>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                             <div class="n_textbox">
+                                 <div class="n_box">
+                                     <span class="notice_text">[04월 08일] 현금 이체 결과 입니다.</span>
+                                     <span class="no_date">2015.04.08</span>
+                                 </div>
+                                 <div class="n_box">   
+                                     <span class="notice_text">[07월 22일] 적립금 결과 입니다.</span>
+                                     <span class="no_date">2016.07.22</span>
+                                 </div>  
+                             </div>
+                         </div>
+                         <div class="swiper-slide"> 
+                            <div class="n_textbox">
+                                <div class="n_box">
+                                     <span class="notice_text">[06월 22일] 적립금 현금 이체 결과 입니다.</span>
+                                     <span class="no_date">2016.06.22</span>
+                                </div>
+                                <div class="n_box">       
+                                     <span class="notice_text">[06월 08일] 적립금 현금 이체 결과 입니다.</span>
+                                     <span class="no_date">2016.06.08</span>
+                                </div>
+                         	</div>
+                         </div>
+                     </div>
+                     <img src="img/notice_bar.png" alt="공지사항구분바" class="notice_bar">
+                    <div class="notice_btn">
+                        <div class="swiper-button-next notice_up"></div>
+                        <div class="swiper-button-prev notice_down"></div>
+                    </div>
+            </div>
+        </div>
+	</div>
+    <div class="content1">
+    	<div class="con1_center">
+		<div class="swiper-container swiper3 con1_size">
+			<div class="swiper-wrapper con_article">
+                <div class="swiper-slide article1">
+                    <ul class="box">
+                         <li><a href="javascript:;">'가성비'앞세운 PB제품, 소비자와 통했나? </a></li>
+                         <li class="pic_date">2016.06.13</li>
+                         <li class="people"><img src="img/people.png" alt="사람수" ></li>
+                         <li class="pic_box"><img src="img/20160628_30_1.jpg" alt="조사그림"></li>
+                    </ul>
+                    <ul class="box">
+                         <li><a href="javascript:;">시간에 쫒기는 현대인들 '편의점 도시락'에 푹빠지다!</a>
+                         <li class="pic_date">2016.06.10</li>
+                         <li class="people"><img src="img/people.png" alt="사람수"></li>
+                         <li class="pic_box"><img src="img/20160622_29_1.jpg" alt="조사그림"></li>
+                    </ul>
+                    <ul class="box">
+                         <li><a href="javascript:;">작년과 비교해 '저축은 그대로,'소비'줄인다</a></li>
+                         <li class="pic_date">2016.05.27</li>
+                         <li class="people"><img src="img/people.png" alt="사람수"></li>
+                         <li class="pic_box"><img src="img/20160622_28_1.jpg" alt="조사그림"></li>
+                    </ul>
+                    <ul class="box">
+                         <li><a href="javascript:;">브랜드가 중요한 상품은 따로있다!</a></li>
+                         <li class="pic_date">2016.05.19</li>
+                         <li class="people"><img src="img/people.png" alt="사람수"></li>
+                         <li class="pic_box"><img src="img/20160608_27_1.jpg" alt="조사그림"></li>
+                    </ul>
+                </div>    
+                <div class="swiper-slide article2">
+                    <ul class="box">a</ul>
+                    <ul class="box">b</ul>
+                    <ul class="box">c</ul>
+                    <ul class="box">d</ul>
+                </div>
+                <div class="swiper-slide article3">
+                    <ul class="box">E</ul>
+                    <ul class="box">F</ul>
+                    <ul class="box">G</ul>
+                    <ul class="box">H</ul>
+                </div>
+                <div class="swiper-slide article4">
+                    <ul class="box">I</ul>
+                    <ul class="box">J</ul>
+                    <ul class="box">K</ul>
+                    <ul class="box">L</ul> 
+                </div>
+			</div>
+            <div class="con1_img">
+                 <div class="col_btn">
+                 <div class="con1_more">
+                 <a href="javascript:;"><img src="img/btn_more.png" alt="조사세상 더보기"></a></div>
+                 <div class="swiper-button-next con1_up"></div>
+                 <div class="swiper-button-prev con1_down"></div>
+                 </div>
+			</div>
+        </div>
+        </div>
+	</div>
+    <div class="content2">
+        <aside>
+        <input type="radio" id="tatal_m" name="tab" checked="checked"/>
+        <input type="radio" id="m_symp" name="tab" />
+        <input type="radio" id="m_sur" name="tab" />
+            <section class="tab_btns">
+            <label for="tatal_m">전체</label>
+            <label for="m_symp">좌담회</label>
+            <label for="m_sur">조사</label>
+            </section>
+            
+            <div class="tab_panel">
+                <div class="tatal_m">
+                    <div class="symp">
+                        <a href="javascript:;">SUV차량 보유자 조사</a>
+                        <p class="money">70,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.22</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">냉난방기 및 공기 정화 관련</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.17</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">해외 TV프로그램 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.13</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">모바일 게임 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.22</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">전자제품 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.06.28 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">소비자조사</a>
+                        <p class="sur_num">[57426]</p>
+                        <p class="money">3,000원~10,000원</p>
+                        <p>2016.07.01 ~ 2016.07.06</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">인식관련조사</a>
+                        <p class="sur_num">[56781]</p>
+                        <p class="money">5,000원</p>
+                        <p>2016.06.21 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">제품관련조사</a>
+                        <p class="sur_num">[57267]</p>
+                        <p class="money">2,000원~4,200원</p>
+                        <p>2016.06.21 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">선물 관련 소비자 조사</a>
+                        <p class="sur_num">[57318]</p>
+                        <p class="money">1,500원~3,900원</p>
+                        <p>2016.07.01 ~ 2016.07.06</p>
+                    </div>   
+                    <div class="sur">
+                        <a href="javascript:;">제품관련조사</a>
+                        <p class="sur_num">[56936]</p>
+                        <p class="money">3,500원</p>
+                        <p>2016.05.30 ~ 2016.07.02</p>
+                    </div>	
+                </div>
+            </div>    
+            <div class="tab_panel">
+                <div class="m_symp">
+                    <div class="symp">
+                        <a href="javascript:;">SUV차량 보유자 조사</a>
+                        <p class="money">70,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.22</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">냉난방기 및 공기 정화 관련</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.17</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">해외 TV프로그램 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.13</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">모바일 게임 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.22</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">전자제품 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.06.28 ~ 2016.07.04</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">SUV차량 보유자 조사</a>
+                        <p class="money">70,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.22</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">냉난방기 및 공기 정화 관련</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.17</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">해외 TV프로그램 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.13</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">모바일 게임 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.07.01 ~ 2016.07.22</p>
+                    </div>
+                    <div class="symp">
+                        <a href="javascript:;">전자제품 관련 좌담회</a>
+                        <p class="money">50,000원 ~</p>
+                        <p>2016.06.28 ~ 2016.07.04</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="tab_panel">   
+                <div class="m_sur">
+                    <div class="sur">
+                        <a href="javascript:;">소비자조사</a>
+                        <p class="sur_num">[57426]</p>
+                        <p class="money">3,000원~10,000원</p>
+                        <p>2016.07.01 ~ 2016.07.06</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">인식관련조사</a>
+                        <p class="sur_num">[56781]</p>
+                        <p class="money">5,000원</p>
+                        <p>2016.06.21 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">제품관련조사</a>
+                        <p class="sur_num">[57267]</p>
+                        <p class="money">2,000원~4,200원</p>
+                        <p>2016.06.21 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">선물 관련 소비자 조사</a>
+                        <p class="sur_num">[57318]</p>
+                        <p class="money">1,500원~3,900원</p>
+                        <p>2016.07.01 ~ 2016.07.06</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">제품관련조사</a>
+                        <p class="sur_num">[56936]</p>
+                        <p class="money">3,500원</p>
+                        <p>2016.05.30 ~ 2016.07.02</p>
+                    </div>    
+                    <div class="sur">
+                        <a href="javascript:;">소비자조사</a>
+                        <p class="sur_num">[57426]</p>
+                        <p class="money">3,000원~10,000원</p>
+                        <p>2016.07.01 ~ 2016.07.06</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">인식관련조사</a>
+                        <p class="sur_num">[56781]</p>
+                        <p class="money">5,000원</p>
+                        <p>2016.06.21 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">제품관련조사</a>
+                        <p class="sur_num">[57267]</p>
+                        <p class="money">2,000원~4,200원</p>
+                        <p>2016.06.21 ~ 2016.07.04</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">선물 관련 소비자 조사</a>
+                        <p class="sur_num">[57318]</p>
+                        <p class="money">1,500원~3,900원</p>
+                        <p>2016.07.01 ~ 2016.07.06</p>
+                    </div>
+                    <div class="sur">
+                        <a href="javascript:;">제품관련조사</a>
+                        <p class="sur_num">[56936]</p>
+                        <p class="money">3,500원</p>
+                        <p>2016.05.30 ~ 2016.07.02</p>
+                    </div>	
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="content3">
+    	<div class="con3_center">  
+    	<div class="con3_size">  
+                <div class="con_notice">
+                    <ul>
+                         <li class="notice_pic"><img src="img/notice.png" alt=""></li>
+                         <li class="more_pic"><img src="img/more.png" alt=""></li>
+                         <li class="notice_text">
+                             <a href="javascript:;">2016년 5월 추천이벤트 당첨자 발표 </a>
+                             <span>2016.06.29</span>
+                         </li>
+                         <li class="notice_text">
+                             <a href="javascript:;">55191번 생활서비스 조사 경품 당첨 발표</a>
+                             <span>2016.06.27</span>
+                         </li>
+                         <li class="notice_text">
+                             <a href="javascript:;">2016년 5월 가입이벤트 당첨자 발표</a>
+                             <span>2016.06.27</span>
+                         </li>
+                         <li class="notice_text">
+                             <a href="javascript:;">[06월 22일] 적립금 현금 이체 결과 입니다.</a>
+                             <span>2016.06.22</span>
+                         </li>
+                    </ul>        
+                </div>
+                <div class="con_banner1">
+                    <ul classs="banner1_bg" alt="1%의 적립금이 만드는 100% 기적">
+                        <li class="people">704,373</li>
+                        <li class="money">345,917,966</li>
+                    </ul>
+                </div>
+                <div class="con_banner2">
+                    <a href="javascript:;"></a>
+                </div>
+				<ul class="img_box">
+                    <li class="cs_senter">
+                    	<a href="javascript:;"><img src="img/PhoneInfo.gif" alt="엠브레인 패널파워 고객센터 1588-8484"></a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;"><img src="img/mFaqImg.gif" alt="자주묻는 질문"></a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;"><img src="img/mQnaImg.gif" alt="1:1문의"></a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;"><img src="img/mAppDownImg.gif" alt="MOBILE APP 모바일앱 안내 및 설치"></a>
+                    </li>
+                </ul>
+        	</div>
+            </div>  
+        </div>
+</section>
+<footer>
+ <div class="footsize">
+    <div class="foot_text">
+            <ul>
+                <li><a href="javascript:;">홈페이지 이용약관</a><span></span></li>
+                <li><a href="javascript:;">개인정보처리방침</a><span></span></li>
+                <li><a href="javascript:;">이메일수집거부</a><span></span></li>
+                <li><a href="javascript:;">사이트이용안내</a></li>
+            </ul>
+        <span class="family">FAMILY SITE</span>
+        <select name="contact_mall" class="site_contect">
+                          <option value="1" selected>Famliy Site</option>
+                          <option value="2">의료기기정보기술지원센터 교육홈페이지</option>
+                          <option value="2">의료기기정보기술지원센터 RA자격증홈페이지</option>
+        </select> 
+    </div>
+  </div>
+  <div class="foot_img">
+ 	 <img src="img_n/copyright.jpg" alt="copyright"> 
+  </div>
+</footer>
+
+</body>
+</html>

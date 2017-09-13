@@ -1,0 +1,173 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+
+<title>belif moblie</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" >
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="belif_menu.png">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="swiper.min.css">
+<script type="text/javascript" src="jquery-1.12.1.js"></script>
+   <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+<script type="text/javascript" >
+
+$(function( ){
+	$('.menu_open_btn').click(function( ){
+		$('.menu').animate( {left:'0'} ,100 );
+	})
+	$('.menu_cl_btn').click(function( ){
+		$('.menu').animate( {left:'-100%'} ,100 );
+	})
+	
+ } )
+ 
+ $(document).ready(function(){
+	var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+	
+	}); 
+	
+	(function() {
+
+function hideAddressBar() {
+  
+  // 웹페이지의 높이가 화면높이보다 작을 때는 실행할 필요가 없으므로 종료
+  if (document.height <= window.outerHeight) return;
+  
+  var scrollTimer = setInterval(function() {
+   if ( ! pageYOffset) {  // 모바일 브라우저에서 주소창이 보이고 있을 때는 pageYOffset = 0 이므로 이때만 실행
+    scrollTo(0, 1);  // 웹페이지를 x축 0, y축 1의 위치로 끌어올림
+   } else { // pageYOffset !=0 인 경우 반복 종료: scrollTo(0, 1) 이 실행되었거나 사용자가 스크롤을 움직인 경우
+    clearInterval(scrollTimer);
+   }
+  }, 100); // 100 밀리세컨드마다 반복 실행
+  
+};
+
+window.addEventListener('load', hideAddressBar, false);  // 페이지 로드 되었을 때 실행
+window.addEventListener('orientationchange', hideAddressBar, false); // 화면이 가로/세로 전환되었을 때 실행
+
+})();
+ 
+</script>
+</head>
+
+<body onload="setTimeout(function(){window.scrollTo(0,1)},100);">
+<header>
+<h1><a href="index.html"><img src="img/logo.png" alt="belif" border="0"></a></h1>
+<button type="button"  class="menu_open_btn">三</button>
+<nav class="menu">
+<h2><a href="index.html"><img src="img/logo.png" alt="belif" border="0"></a></h2>
+<button type="button" class="menu_cl_btn">&times;</button> 
+<ul class="sub">
+    <li>belif
+        <ul class="subsub">
+            <li><a href="about/about.html">about</a></li>
+            <li><a href="info/info.html">info</a></li>
+        </ul>
+    </li>
+    <li>item
+        <ul class="subsub">
+            <li><a href="woman/woman.html">woman</a></li>
+            <li><a href="men/men.html">men</a></li>
+            <li><a href="baby/baby.html">baby</a></li>
+            <li><a href="body/body.html">body</a></li>
+        </ul>
+    </li>
+    <li>stamp
+        <ul class="subsub">
+            <li><a href="online_stamp/online_stamp.html">online stamp</a></li>
+            <li><a href="stamp_application/stamp_application.html">stamp 신청</a></li>
+        </ul>
+    </li>
+    <li>project
+        <ul class="subsub">
+            <li><a href="event/event.html">event</a></li>
+            <li><a href="collaboration/collaboration.html">collaboration</a></li>
+        </ul>
+    </li>            
+</ul>
+</nav>
+</header>
+
+<section class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="img/slide1.jpg" alt="모이스춰 밤쿠션" border="0"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/slide2.png" alt="뉴메로 10 에센스 점보" border="0"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/slide3.jpg" alt="베이비 선메탈쿠션" border="0"></a></div>      
+        </div>
+</div>
+
+<section class="bestproduct">
+<h3>best product</h3>
+<div class="best1"><a href="#"><img src="img/best1.png" alt="1위 제품" border="0"></a></div>
+<div class="best2"><a href="#"><img src="img/best2.png" alt="2위 제품" border="0"></a></div>
+<div class="best3"><a href="#"><img src="img/best3.png" alt="3위 제품" border="0"></a></div>
+<div class="best4"><a href="#"><img src="img/best4.png" alt="4위 제품" border="0"></a></div>
+</section>
+
+<section class="project">
+<h3>project</h3>
+<aside>
+<input type="radio" id="event" name="tab" checked="checked" />
+    <input type="radio" id="collabo" name="tab"  />
+	<section class="tab_btns">
+    	<label for="event">event</label>
+        <label for="collabo">collaboration</label>
+    </section>  
+    
+    <div class="tab_panel">
+    <div class="event">
+        <div id="event1"><a href="event/event.html"><img src="img/event1.jpg" border="0"></a></div>
+        <div id="event2"><a href="event/event.html"><img src="img/event2.jpg" border="0"></a></div>
+    </div>
+    </div>
+
+  <div class="tab_panel">
+    <div class="collabo">
+       <div id="collabo1"><a href="collaboration/collaboration.html"><img src="img/coll1.jpg" border="0"></a></div>
+       <div id="collabo2"><a href="collaboration/collaboration.html"><img src="img/coll2.jpg" border="0"></a></div>
+    </div>
+ </div>
+
+</aside>
+</section>
+
+<section class="info">
+<a href="info/info.html"><img src="img/info.jpg" border="0"></a>
+<div class="customer"><p>customer<br>service<strong><a href="tel:080-023-7007">080-023-7007</a></strong></p>
+<p>mon-FRI: 09:00~18:00<br>
+Lunch:12:00~13:00<br>
+sat&amp;sun:Day OFF</p></div>
+</section>
+
+</section>
+</section>
+
+
+<footer>
+<div class="sns">
+<a href="https://www.instagram.com/belif.official/"><img src="img/instar.png" alt="인스타그램" border="0"></a>
+<a href="https://www.facebook.com/belif.cosmetic"><img src="img/facebook.png" alt="페이스북" border="0"></a>
+</div>
+<ul>
+<li><a href="javascript:void();">contact</a></li>
+<li><a href="javascript:void();">이용약관</a></li>
+<li><a href="javascript:void();">개인정보 취급 방침</a></li>
+<span>COPYRIGHT©2016 BILEF.CO.KR<br>ALL RIGHT RESERVERD</span>
+</ul>
+</footer>
+
+</body>
+</html>

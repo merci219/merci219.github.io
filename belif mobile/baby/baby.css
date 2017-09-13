@@ -1,0 +1,63 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@media only screen and ( min-device-width:768px) and (max-device-width:1024px){}
+
+body,ul,li,div,p,h1,h2,h3,a,header,section,nav,footer,div,img{ margin:0; padding:0;}
+a{ text-decoration:none;}
+ul{list-style:none; }
+button{border:0 none; background:rgba(0,0,0,0)}
+
+
+header{width:100%; height:50px; background-color:#333; position:fixed; z-index:200; top:0; left:0;}
+header h1{margin:0px auto; width:78px; height:26px; padding-top:10px; }
+header h1 a img{width:90%; height:90%; display:block; padding-top:4px;}
+header button{width:32px; height:32px; position:absolute; top:9px; left:5px;background:url(img/o.png) no-repeat center center;text-indent:-9999px;}
+
+
+nav{width:100%;  background-color:#333; position:absolute; z-index:300; top:0px; left:-100%; }
+nav h2{margin:0px auto; width:78px; height:26px; padding-top:10px; }
+nav h2 a img{width:90%; height:90%; display:block; padding-top:4px;}
+nav button{width:32px; height:32px; position:absolute; top:9px; left:5px; background:url(img/x.png) no-repeat center center; text-indent:-9999px;}
+
+.sub{width:100%;  background-color:#FFF; margin-top:14px;}
+.sub li{ width:100%;  line-height:25px; background:#f0f0f0; font-size:14px; font-family: 'Jeju Gothic', sans-serif; color:#323232; width:100%;  display:block; background:#f0f0f0;  text-transform:uppercase; padding-left:2%; box-sizing:border-box;}
+.subsub{ margin-left:-2%;}
+.subsub li{width:100%; height:36px; display:block; background:#FFF; box-sizing:border-box; padding-left:20px; padding-top:6px; }
+.subsub li a{color:#545454; font-size:15px; font-family: 'Jeju Gothic', sans-serif; text-transform:lowercase; }
+
+
+.menu_1{ width:100%; height:auto; margin-top:50px;}
+.menu_1 h3{ font-family: 'Jeju Gothic', sans-serif; font-size:20px; line-height:45px; text-transform:uppercase; text-align:center; color:#000;
+			width:100%; height:45px; background:#f3ebff;}
+.menu_1 ul{ width:100%; height:40px;text-align:center; }
+.menu_1 ul li{ width:50%; float:left;  padding-top:5px; line-height:28px;background:#ddd; height:35px;}
+.menu_1 ul li:nth-child(1){background:#fff;}
+.menu_1 ul li a{font-family: 'Jeju Gothic', sans-serif; font-size:18px;color:#bbb; }
+.menu_1 ul li:nth-child(1) a{color:#a885dd;}
+
+.container_top{ width:100%; height:auto; padding:20px 0}
+.container_top p{font-size:14px; font-family:'Nanum Gothic', serif; color:#333; line-height:25px; padding:0 15px;}
+.container_top strong{font-size:15px; font-family: 'Jeju Gothic', sans-serif; text-transform:uppercase; padding-top:20px; display:block; padding-bottom:10px;}
+
+
+
+.imgbox{ width:100%; height:auto;}
+.imgbox ul{ width:100%; overflow:hidden;}
+
+.imgbox img{ width:100%; height:auto; }
+.imgbox li{ width:50%; height:auto; float:left; overflow:hidden;}
+.imgbox ul li:nth-child(odd){clear:left;float:left;}
+
+
+
+footer{width:100%; height:190px; background:#58595b; margin-top:50px; }
+footer .sns{width:120px; margin:0 auto; padding-top:25px; }
+footer .sns a{padding-left:25px;}
+footer .sns a:first-of-type{padding:0px;}
+footer ul{width:250px; height:12px; margin:0 auto;}
+footer ul li{height:12px; color:#FFF; float:left;border-left:1px solid #FFF; margin:25px 0px; }
+footer ul li:first-of-type{ border:0px;}
+footer ul li a{font-family:'Nanum Gothic', serif; font-size:12px; display:block; color:#FFF; padding:0px 10px; }
+footer ul span{width:200px; font-family:'Nanum Gothic', serif; font-size:10px; color:#FFF; border:0px; text-align:center; margin:0 auto; display:block;}

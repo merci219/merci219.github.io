@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mobile collaboration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" >
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="../belif_menu.png"> 
+<link rel="stylesheet" href="collaboration.css">
+<script type="text/javascript" src="jquery-1.12.1.js"></script>
+<script type="text/javascript" >
+
+$(function( ){
+	$('.menu_open_btn').click(function( ){
+		$('.menu').animate( {left:'0'} ,100 );
+	})
+	$('.menu_cl_btn').click(function( ){
+		$('.menu').animate( {left:'-100%'} ,100 );
+	})
+	
+ });
+ 
+
+</script>
+</head>
+
+<body>
+<header>
+<h1><a href="../index.html"><img src="img/logo.png" alt="belif"></a></h1>
+<button type="button"  class="menu_open_btn">三</button>
+<nav class="menu">
+<h2><a href="../index.html"><img src="img/logo.png" alt="belif"></a></h2>
+<button type="button" class="menu_cl_btn">&times;</button> 
+<ul class="sub">
+    <li>belif
+        <ul class="subsub">
+            <li><a href="../about/about.html">about</a></li>     
+            <li><a href="../info/info.html">info</a></li>
+        </ul>
+    </li>
+    <li>item
+        <ul class="subsub">
+            <li><a href="../woman/woman.html">woman</a></li>
+            <li><a href="../men/men.html">man</a></li>
+            <li><a href="../baby/baby.html">baby</a></li>
+            <li><a href="../body/body.html">body</a></li>
+        </ul>
+    </li>
+    <li>stamp
+        <ul class="subsub">
+            <li><a href="../online_stamp/online_stamp.html">online stamp</a></li>
+            <li><a href="../stamp_application/stamp_application.html">stamp 신청</a></li>
+        </ul>
+    </li>
+    <li>project
+        <ul class="subsub">
+            <li><a href="../event/event.html">event</a></li>
+            <li><a href="collaboration.html">collaboration</a></li>
+        </ul>
+    </li>            
+</ul>
+</nav>
+</header>
+
+<section class="menu_1">
+	<h3>project</h3>
+	<ul>
+    	<li><a href="../event/event.html">event</a></li>
+        <li><a href="collaboration.html">collaboration</a></li>
+    </ul>
+</section>
+<section class="imgbox">
+	<ul>
+    	<li class="box1"><a href="collaboration_sub.html"><img src="img/img1.png"></a></li>
+        <li class="box2"><a href="#"><img src="img/img2.png" alt="콜라보레이션"></a></li>
+        <li class="box3"><a href="#"><img src="img/img3.png" alt="콜라보레이션"></a></li>
+        <li class="box4"><a href="#"><img src="img/img4.png" alt="콜라보레이션"></a></li>
+        <li class="box5"><a href="#"><img src="img/img5.png" alt="콜라보레이션"></a></li>
+        <li class="box6"><a href="#"><img src="img/img6.png" alt="콜라보레이션"></a></li>
+        <li class="box7"><a href="#"><img src="img/img7.png" alt="콜라보레이션"></a></li>
+        <li class="box8"><a href="#"><img src="img/img8.png" alt="콜라보레이션"></a></li>
+        <li class="box9"><a href="#"><img src="img/img9.png" alt="콜라보레이션"></a></li>
+        <li class="box10"><a href="#"><img src="img/img10.png" alt="콜라보레이션"></a></li>
+    </ul>
+</section>
+<footer>
+<div class="sns">
+<a href="#"><img src="img/instar.png" alt="인스타그램"></a>
+<a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+</div>
+<ul>
+<li><a href="#">contact</a></li>
+<li><a href="#">이용약관</a></li>
+<li><a href="#">개인정보 취급 방침</a></li>
+<span>COPYRIGHT©2016 BILEF.CO.KR<br>ALL RIGHT RESERVERD</span>
+</ul>
+</footer>
+</body>
+</html>

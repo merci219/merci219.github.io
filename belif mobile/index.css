@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@media only screen and ( min-device-width:768px) and (max-device-width:1024px){
+ }
+
+body,ul,li,div,p,h1,h2,h3,a,header,section,nav,footer,div,img{ margin:0; padding:0;}
+a{ text-decoration:none;}
+ul{list-style:none; }
+button{border:0 none; background:rgba(0,0,0,0)}
+
+
+header{width:100%; height:50px; background-color:#333; position:fixed; z-index:200; top:0; left:0;}
+header h1{margin:0px auto; width:78px; height:26px; padding-top:10px; }
+header h1 a img{width:90%; height:90%; display:block; padding-top:4px;}
+header button{width:32px; height:32px; position:absolute; top:9px; left:5px;background:url(img/o.png) no-repeat center center;text-indent:-9999px;}
+
+
+nav{width:100%;  background-color:#333; position:absolute; z-index:300; top:0px; left:-100%; }
+nav h2{margin:0px auto; width:78px; height:26px; padding-top:10px; }
+nav h2 a img{width:90%; height:90%; display:block; padding-top:4px;}
+nav button{width:32px; height:32px; position:absolute; top:9px; left:5px; background:url(img/x.png) no-repeat center center; text-indent:-9999px;}
+
+.sub{width:100%;  background-color:#FFF; margin-top:14px;}
+.sub li{ width:100%;  line-height:25px; background:#f0f0f0; font-size:14px; font-family: 'Jeju Gothic', sans-serif; color:#323232; width:100%;  display:block; background:#f0f0f0;  text-transform:uppercase; padding-left:2%; box-sizing:border-box;}
+.subsub{ margin-left:-2%;}
+.subsub li{width:100%; height:36px; display:block; background:#FFF; box-sizing:border-box; padding-left:20px; padding-top:6px; }
+.subsub li a{color:#545454; font-size:15px; font-family: 'Jeju Gothic', sans-serif; text-transform:lowercase; }
+
+.swiper-container{ position:absolute; width:100%; height:auto;}
+	
+	
+.swiper-wrapper{width:100%;padding-top:50px;height:auto; }
+.swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }	
+.swiper-slide a img{width:100%; height:auto; }
+
+
+.bestproduct{width:100%; height:auto; overflow:hidden; }
+.bestproduct h3{width:100%; height:50px; background-color:#323232; color:#FFF; text-align:center; font-size:22px; padding-top:15px; box-sizing:border-box; text-transform:uppercase; font-family: 'Jeju Gothic', sans-serif;}
+.bestproduct div{width:50%; height:auto; float:left;}
+.bestproduct .best3{clear:left; float:left;}
+.bestproduct div img{width:100%; height:auto; }
+
+.project{width:100%; height:auto;overflow:hidden;}
+.project h3{width:100%; height:50px; background-color:#323232; color:#FFF; text-align:center; font-size:22px; padding-top:15px; box-sizing:border-box; text-transform:uppercase; font-family: 'Jeju Gothic', sans-serif; }
+
+aside{width:100%;}
+label{	display:block;	float:left;	width:50%;	height:40px;
+				line-height:40px;		text-align:center;		box-sizing:border-box;
+				border:1px solid #d2d3d5;		background:#d2d3d5;	color:#454545;	 font-family: 'Jeju Gothic', sans-serif; font-size:16px; text-transform:uppercase; }
+input:nth-of-type(1){		display:none;		}
+input:nth-of-type(2){		display:none;		}
+input:nth-of-type(1):checked~section.tab_btns>label:nth-of-type(1){
+		background:#FFF;		color:#34aeff;		border-bottom:0px;
+	}
+input:nth-of-type(2):checked~section.tab_btns>label:nth-of-type(2){
+		background:#FFF;		color:#34aeff;		border-bottom:0px;
+	}
+	section.tab_btns{		overflow:hidden;		}
+	div.tab_panel{		padding:10px;		}
+	input:nth-of-type(1)~div:nth-of-type(1){	display:none;		}
+	input:nth-of-type(2)~div:nth-of-type(2){	display:none;		}
+	input:nth-of-type(1):checked~div:nth-of-type(1){		display:block;		}
+	input:nth-of-type(2):checked~div:nth-of-type(2){		display:block;		}
+
+.tab_panel .event{width:100%; height:auto; overflow:hidden; margin:25px 0;}
+.tab_panel .event  img{width:100%; height:auto;}
+.tab_panel .event div{border:2px solid #c5c5c5; }
+.tab_panel .event #event2{margin-top:14px;}
+
+.tab_panel .collabo {width:100%; height:auto; overflow:hidden; margin:25px 0;}
+.tab_panel .collabo img{width:100%; height:auto;}
+.tab_panel .collabo div{width:46%; height:auto; border:2px solid #c5c5c5; float:left; display:block; box-sizing:border-box; margin:14px 2%;}
+
+
+.info{width:100%; height:auto;  background:#333; margin-top:0%; text-align:right;}
+.info img{width:100%; height:auto;}
+.info .customer{padding:20px 0px;}
+.info .customer p{font-family: 'Jeju Gothic', sans-serif; font-size:24px; text-transform:uppercase; padding-right:10px; color:#FFF;}
+.info .customer strong{display:block; font-size:28px; color:#34aeff;  padding:10px 0px;}
+.info .customer p:last-of-type{font-size:18px; line-height:24px;}
+.info div a{color:#34aeff;}
+
+footer{width:100%; height:190px; background:#58595b;}
+footer .sns{width:120px; margin:0 auto; padding-top:25px; }
+footer .sns a{padding-left:25px;}
+footer .sns a:first-of-type{padding:0px;}
+footer ul{width:250px; height:12px; margin:0 auto;}
+footer ul li{height:12px; color:#FFF; float:left;border-left:1px solid #FFF; margin:25px 0px; }
+footer ul li:first-of-type{ border:0px;}
+footer ul li a{font-family:'Nanum Gothic', serif; font-size:12px; display:block; color:#FFF; padding:0px 10px; }
+footer ul span{width:200px; font-family:'Nanum Gothic', serif; font-size:10px; color:#FFF; border:0px; text-align:center; margin:0 auto; display:block;}
